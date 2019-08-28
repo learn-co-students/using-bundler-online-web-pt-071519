@@ -5,3 +5,4 @@ Sinatra
 Octokit
 Pry
 AwesomePrint
+RSpec

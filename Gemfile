@@ -1,15 +1,16 @@
 source 'https://rubygems.org' do
-  gem "rspec"
-  gem "sinatra", '~>1.4.4'
-  gem "hashie"
-  gem 'octokit', '~> 2.0'
-  gem "awesome_print" git: "https://github.com/awesome-print/awesome_print"
+gem 'sinatra', '~> 1.4.4'
+gem 'hashie'
+gem 'octokit' #, '~> 2.0', '=< 2.0'
+gem 'awesome_print' git: "github.com/awesome-print/awesome_print.git"
 end
 
 group :development do 
   gem "pry" 
 end 
-
+group :test do 
+  gem "rspec"
+end 
 
 # OTHER NOTES ABOUT GEMFILE CONTENT
 # Options for grabbing gems to enhance your code may ne resource from many options.
